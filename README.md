@@ -22,7 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The calculate_task_completion is a rought draft of a method which calculates the date and time completion
+for a given task and takes the following parameters:
+- start_date => start date of a task
+- task_start_time => start time of a task (currently integer or float)
+- work_end_time => working hours end time (currently integer or float)
+- workload => workload of a task in hours (currently integer or float)
+- work_hours_in_day => number of working hours in a day (currently integer or float)
+- holidays => an array of holidays to exlude from the date calculation
+
+The current output is a puts to command prompt:
+puts "Task completion date and time are: #{final_day}, #{final_hour}."
+
+Example
+calculate_task_completion(Date.new(2015,10,20), 9, 17, 80, 7.5, [Date.new(2015,10,22), Date.new(2015,10,25)])
 
 ## Development
 
